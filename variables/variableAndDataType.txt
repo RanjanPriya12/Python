@@ -1,0 +1,129 @@
+1) Python has the following data types built-in by default, in these categories:
+
+   Text Type:	str
+   Numeric Types:	int, float, complex
+   Sequence Types:	list, tuple, range
+   Mapping Type:	dict
+   Set Types:	set, frozenset
+   Boolean Type:	bool
+   Binary Types:	bytes, bytearray, memoryview
+   None Type:	NoneType
+
+2) You can get the data type of any object by using the type() function.
+   Example: x=5;
+            print(type(x)); #int
+
+3) You cannot convert complex numbers into another number type.
+
+=========================== String ===============================
+4) You can assign a multiline string to a variable by using three quotes.
+   Example: a = """Lorem ipsum dolor sit amet,
+                   consectetur adipiscing elit,
+                   sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua."""
+                print(a);
+
+5) To get the length of a string, use the len() function.
+   Example: a = "Hello, World!"
+                print(len(a));
+
+6) To check if a certain phrase or character is present in a string, we can use the keyword in.
+   Example: txt = "The best things in life are free!"
+                   print("free" in txt)
+
+7) To check if a certain phrase or character is NOT present in a string, we can use the keyword not in.
+8) The strip() method removes any whitespace from the beginning or the end.
+9) The replace() method replaces a string with another string.
+10) The split() method returns a list where the text between the specified separator becomes the list items.
+
+
+============================== String Methods ================================
+1) capitalize()	
+      Converts the first character to upper case.
+
+2) casefold()	
+      Converts string into lower case.
+
+3) center()	
+      Returns a centered string.
+
+4) count()	
+      Returns the number of times a specified value occurs in a string.
+
+5) encode()	
+      Returns an encoded version of the string.
+
+6) endswith()	
+      Returns true if the string ends with the specified value.
+
+7) find()	
+      Searches the string for a specified value and returns the position of where it was found.
+
+8) index()	
+      Searches the string for a specified value and returns the position of where it was found.
+
+9) isalnum()	
+      Returns True if all characters in the string are alphanumeric.
+
+10) isalpha()	
+      Returns True if all characters in the string are in the alphabet.
+
+11) isascii()	
+      Returns True if all characters in the string are ascii characters.
+
+12) isdecimal()	
+      Returns True if all characters in the string are decimals.
+
+13) isdigit()	
+      Returns True if all characters in the string are digits.
+
+14) isidentifier()	
+      Returns True if the string is an identifier.
+
+15) islower()	
+      Returns True if all characters in the string are lower case.
+
+16) isnumeric()	
+      Returns True if all characters in the string are numeric.
+
+17) isspace()	
+      Returns True if all characters in the string are whitespaces.
+
+18) isupper()	
+      Returns True if all characters in the string are upper case.
+
+19) join()	
+      Joins the elements of an iterable to the end of the string.
+
+20) lower()	
+      Converts a string into lower case.
+
+21) lstrip()	
+      Returns a left trim version of the string.
+
+22) replace()	
+      Returns a string where a specified value is replaced with a specified value.
+
+23) rfind()	
+      Searches the string for a specified value and returns the last position of where it was found.
+
+24) rindex()	
+      Searches the string for a specified value and returns the last position of where it was found.
+
+25) rstrip()	
+      Returns a right trim version of the string.
+
+26) split()	
+      Splits the string at the specified separator, and returns a list.
+
+27) startswith()	
+      Returns true if the string starts with the specified value.
+
+28) strip()	
+      Returns a trimmed version of the string.
+
+29) swapcase()	
+      Swaps cases, lower case becomes upper case and vice versa.
+
+30) upper()	
+      Converts a string into upper case.
