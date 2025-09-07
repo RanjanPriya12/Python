@@ -15,7 +15,7 @@
 
 3) You cannot convert complex numbers into another number type.
 
-=========================== String ===============================
+==================================== STRING =====================================
 4) You can assign a multiline string to a variable by using three quotes.
    Example: a = """Lorem ipsum dolor sit amet,
                    consectetur adipiscing elit,
@@ -37,7 +37,7 @@
 10) The split() method returns a list where the text between the specified separator becomes the list items.
 
 
-============================== String Methods ================================
+===================================== String Methods =====================================
 1) capitalize()	
       Converts the first character to upper case.
 
@@ -127,3 +127,77 @@
 
 30) upper()	
       Converts a string into upper case.
+
+
+
+========================================= BOOLEAN ===================================
+Most Values are True:
+ 1) Almost any value is evaluated to True if it has some sort of content.
+ 2) Any string is True, except empty strings.
+ 3) Any number is True, except 0.
+ 4) Any list, tuple, set, and dictionary are True, except empty ones.
+
+
+Some Values are False:
+ 1) such as (), [], {}, "", the number 0, and the value None. 
+ 2) And of course the value False evaluates to False.
+
+
+isinstance():
+  function, which can be used to determine if an object is of a certain data type.
+
+
+
+============================================ LIST ==========================================
+
+Python Collections (Arrays):
+There are four collection data types in the Python programming language:
+  1) List is a collection which is ordered and changeable. Allows duplicate members.
+  2) Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+  3) Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+  4) Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+insert():
+  To insert a new list item, without replacing any of the existing values, we can use the insert() 
+  method. The insert() method inserts an item at the specified index.
+
+append():
+  To add an item to the end of the list, use the append() method.
+
+extend():
+  To append elements from another list to the current list, use the extend() method.
+
+remove():
+  The remove() method removes the specified item.
+
+pop(index?optional):
+  The pop() method removes the specified index.
+
+del:
+  The del keyword also removes the specified index.
+  Example: thislist = ["apple", "banana", "cherry"]
+           del thislist[0]
+
+clear():
+  The clear() method empties the list. The list still remains, but it has no content.
+
+List COmprehension:
+  newlist = [expression for item in iterable/oldlist if condition == True];
+  The return value is a new list, leaving the old list unchanged.
+
+sort():
+  This method that will sort the list alphanumerically, ascending, by default.
+  To sort descending, use the keyword argument reverse = True.
+
+reverse():
+  This method reverses the current sorting order of the elements.
+
+copy():
+  You can use the built-in List method copy() to copy a list.
+  Another way to make a copy is to use the built-in method list().
+  You can also make a copy of a list by using the : (slice) operator.
+  Example:
+     thislist = ["apple", "banana", "cherry"]
+     mylist1 = thislist.copy() -->copy method
+     mylist2 = list(thislist) -->list method
+     mylist3 = thislist[:] -->slice method
