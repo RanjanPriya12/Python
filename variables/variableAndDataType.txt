@@ -201,3 +201,134 @@ copy():
      mylist1 = thislist.copy() -->copy method
      mylist2 = list(thislist) -->list method
      mylist3 = thislist[:] -->slice method
+
+
+
+=========================================== TUPLE ========================================
+Tuple:
+   Tuples are used to store multiple items in a single variable.
+   A tuple is a collection which is ordered and unchangeable. Tuple items are indexed
+   Tuples are written with round brackets, and allow duplicate values.
+   To determine how many items a tuple has, use the len() function.
+   A tuple can contain different data types.
+   It is also possible to use the tuple() constructor to make a tuple.
+   You can access tuple items by referring to the index number, inside square brackets.
+   To determine if a specified item is present in a tuple use the in keyword.
+   Once a tuple is created, you cannot change its values. Tuples are unchangeable, 
+   or immutable as it also is called, But there is a workaround. You can convert the tuple into 
+   a list, change the list, and convert the list back into a tuple.
+
+   Note: When creating a tuple with only one item, remember to include a comma after the item, 
+         otherwise it will not be identified as a tuple.
+
+   we are also allowed to extract the values back into variables. This is called "unpacking".
+   If the number of variables is less than the number of values, you can add an * to the variable 
+   name and the values will be assigned to the variable as a list.
+   If the asterisk is added to another variable name than the last, Python will assign values to 
+   the variable until the number of values left matches the number of variables left.
+
+
+count():
+   Returns the number of times a specified value occurs in a tuple.
+
+index():
+   Searches the tuple for a specified value and returns the position of where it was found.
+
+
+
+
+========================================= SET ==============================================
+Set:
+   A set is a collection which is unordered, unchangeable*, and unindexed.
+   * Note: Set items are unchangeable, but you can remove items and add new items.
+   Note: Sets are unordered, so you cannot be sure in which order the items will appear.
+   Set items are unordered, unchangeable, and do not allow duplicate values.
+   Set items are unchangeable, meaning that we cannot change the items after the set 
+   has been created.
+   Note: The values True and 1 are considered the same value in sets, and are treated as duplicates.
+   Note: The values False and 0 are considered the same value in sets, and are treated as duplicates.
+   To determine how many items a set has, use the len() function.
+   A set can contain different data types.
+   It is also possible to use the set() constructor to make a set.
+   To add one item to a set use the add() method.
+   To add items from another set into the current set, use the update() method.
+   The object in the update() method does not have to be a set, it can be any iterable object 
+   (tuples, lists, dictionaries etc).
+   To remove an item in a set, use the remove(), or the discard() method.
+   Note: If the item to remove does not exist, remove() will raise an error.
+   Note: If the item to remove does not exist, discard() will NOT raise an error.
+   Note: Sets are unordered, so when using the pop() method, you do not know which item that gets removed.
+   The clear() method empties the set.
+   
+Join Set:
+   There are several ways to join two or more sets in Python.
+    1) The union() and update() methods joins all items from both sets.
+    2) The intersection() method keeps ONLY the duplicates.
+    3) The difference() method keeps the items from the first set that are not in the other set(s).
+    4) The symmetric_difference() method keeps all items EXCEPT the duplicates.
+
+union():
+    The union() method returns a new set with all items from both sets.
+    You can use the | operator instead of the union() method, and you will get the same result.
+    The union() method allows you to join a set with other data types, like lists or tuples.
+
+    Note: The  | operator only allows you to join sets with sets, and not with other data types 
+          like you can with the  union() method.
+
+update():
+    The update() method inserts all items from one set into another.
+    The update() changes the original set, and does not return a new set.
+
+    Note: Both union() and update() will exclude any duplicate items.
+
+intersection():
+    Keep ONLY the duplicates
+    The intersection() method will return a new set, that only contains the 
+    items that are present in both sets.
+    You can use the & operator instead of the intersection() method, and you 
+    will get the same result.
+
+    Note: The & operator only allows you to join sets with sets, and not with other 
+          data types like you can with the intersection() method.
+
+
+intersection_update():
+    The intersection_update() method will also keep ONLY the duplicates, but it will 
+    change the original set instead of returning a new set.
+
+difference():
+    The difference() method will return a new set that will contain only the items from 
+    the first set that are not present in the other set.
+    You can use the - operator instead of the difference() method, and you will get the same result.
+
+    Note: The - operator only allows you to join sets with sets, and not with other data types 
+          like you can with the difference() method.
+
+
+difference_update():
+    The difference_update() method will also keep the items from the first set that are not in the 
+    other set, but it will change the original set instead of returning a new set.
+
+
+symmetric_difference():
+    The symmetric_difference() method will keep only the elements that are NOT present in both sets.
+    You can use the ^ operator instead of the symmetric_difference() method, and you will get the same result.
+
+    Note: The ^ operator only allows you to join sets with sets, and not with other data types like 
+          you can with the symmetric_difference() method.
+
+
+symmetric_difference_update():
+    The symmetric_difference_update() method will also keep all but the duplicates, but it will 
+    change the original set instead of returning a new set.
+
+
+isdisjoint():	 	
+    Returns whether two sets have a intersection or not.
+
+issubset(): (<=)
+    Returns True if all items of this set is present in another set.
+
+issuperset(): ()>=)
+    Returns True if all items of another set is present in this set.
+
